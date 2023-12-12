@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS_folder/index.css">
+  <link rel="stylesheet" href="Responsiveness_folder/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="fonticon/css/all.css" />
+  <link rel="icon" href="h-icon.png">
+  <title>hobbycue</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <!-- logo -->
+    <div class="logo">
+      <div class="letter">
+        <h1>h</h1>
+      </div>
+      <div class="content">
+        <h1>hobby<span style="color: var(--color-purple);">cue</span></h1>
+        <p>Your Hobby, Your Community</p>
+      </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="search_container">
+      <div class="bar">
+        <input type="text" placeholder='Search here...' />
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <!-- dropdown -->
+    <nav class="navbar">
+      <div class="navigate">
+        <ul>
+          <div class="list">
+            <div id="heading">
+              <img src="assets/icon2.jpeg" alt="">
+              <a href="#">Explore ▾</a>
+            </div>
+            <ul id="dropdown" class="dropdown-content">
+              <li><a href="#">People - Community</a></li>
+              <li><a href="#">Places - Venues</a></li>
+              <li><a href="#">Programs - Events</a></li>
+              <li><a href="#">Products - Store</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+        </ul>
+        <ul>
+          <div class="list">
+            <div id="heading">
+              <img src="assets/icon1.jpeg" alt="">
+              <a href="#"> Hobbies ▾</a>
+            </div>
+            <ul id="dropdown">
+              <li><a href="#">People - Community</a></li>
+              <li><a href="#">Places - Venues</a></li>
+              <li><a href="#">Programs - Events</a></li>
+              <li><a href="#">Products - Store</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- icons -->
+    <div class="icons">
+      <i class="fa-solid fa-bookmark" id="d-none"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-cart-shopping" id="d-none"></i>
+    </div>
+
+    <div class="btn">
+      <button><a> Sign in</a></button>
+    </div>
+    <div class="contain">
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </div>
+  </header>
+
+
+  <div id="home">
+    <div class="container home-container">
+      <div class="content-container">
+        <div class="home-content">
+          <h1>Explore your <span style="color: var(--color-purple);">hobby</span> or <span
+              style="color: var(--color-blue);">passion</span></h1>
+          <p>Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers,
+            classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or
+            performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…
+          </p>
+          <p>If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products,
+            services or events. Hop on your hobbyhorse and enjoy the ride.</p>
+        </div>
+        <div class="home-image">
+          <img src="assets/img_1.jpeg" alt="">
+        </div>
+      </div>
+
+
+      <div class="form-container">
+        <div class="form-box">
+          <!-- buttons -->
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="sigin()"><u>Sign In</u></button>
+            <button type="button" class="toggle-btn" onclick="joinIn()">Join In</button>
+          </div>
+
+          <!-- fixed format -->
+          <div class="format-container">
+          <div class="button-group">
+            <div class="btn-box">
+              <img src="assets/google.jpeg" alt="">
+              <p> Continue with Google</p>
+            </div>
+            <div class="btn-box">
+              <img src="assets/facebook.jpeg" alt="">
+              <p>Continue with Facebook</p>
+            </div>
+          </div>
+
+          <div class="message">
+            <hr size="5" width="30%" color="#CED4DA">
+            <p>Or connect with</p>
+            <hr size="5" width="30%" color="#CED4DA">
+          </div>
+
+          <form id="login-form">
+            <div class="form-group">
+              <input type="text" id="username-log" name="username-log" required placeholder="Email">
+            </div>
+
+            <div class="form-group">
+              <input type="password" id="password-log" name="password-log" required placeholder="Password"
+                style="margin-left: 15px;">
+              <span class="eye-icon" onclick="togglePasswordVisibility()">
+                <i class="fa-solid fa-eye-slash"></i>
+              </span>
+            </div>
+          </form>
+
+          <!-- slider -->
+          <div class="slide-container">
+          <div class="slider-section" id="sigin">
+            <div class="box">
+              <div class="check-box">
+                <input type="checkbox" class="checkBox"><span>Remember me</span>
+              </div>
+              <p><i class="fa-solid fa-lock" style="margin: 0 1rem;"></i>Forgot password?</p>
+            </div>
+            <button type="submit" class="submit-btn">Continue</button>
+          </div>
+
+          <div class="slider-section" id="joinIn">
+            <div class="box">
+              <div class="lines">
+                <hr size="8" width="25%" color="white" style="border-radius: 0.5rem;">
+                <hr size="8" width="25%" color="white" style="border-radius: 0.5rem;">
+                <hr size="8" width="25%" color="white" style="border-radius: 0.5rem;">
+              </div>
+              <p>Password strength</p>
+            </div>
+            <p class="ts-style">By continuing, you agree to our Terms of Service and Privacy Policy.</p>
+            <button type="submit" class="join-btn">Agree and Continue</button>
+          </div>
+        </div>
+        </div>
+    </div>
+     </div>
+  </div>
+</div>
+
+   
+     <div id="fixed-button">
+    <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+   </div>
+   <div id="message">
+    <p>Go to top (Ctrl+Home)</p>
+  </div>
+ 
+
+  <!-- Service Section -->
+  <div id="services">
+    <section class="services container" data-aos="fade-up">
+      <div class="card-container">
+
+        <div class="cards" id="card-1">
+          <div class="card-heading">
+            <i class="fa-solid fa-users"></i>
+            <h3>People</h3>
+          </div>
+          <p>Find a teacher, coach, or expert for your hobby interest in your locality. Find a partner, teammate,
+            accompanist or collaborator.</p>
+          <div class="btn-card">
+            <button><a> Connect</a></button>
+          </div>
+        </div>
+
+        <div class="cards"  id="card-2">
+          <div class="card-heading">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Place</h3>
+          </div>
+          <p>Find a class, school, playground, auditorium, studio, shop or an event venue. Book a slot at venues that
+            allow booking through hobbycue.</p>
+          <div class="btn-card">
+            <button><a> Meet up</a></button>
+          </div>
+        </div>
+
+        <div class="cards"  id="card-3">
+          <div class="card-heading">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h3>Product</h3>
+          </div>
+          <p>Find equipment or supplies required for your hobby. Buy, rent or borrow from shops, online stores or from
+            community members.</p>
+          <div class="btn-card">
+            <button><a> Get it</a></button>
+          </div>
+        </div>
+
+        <div class="cards"  id="card-4">
+          <div class="card-heading">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Program</h3>
+          </div>
+          <p>Find events, meetups and workshops related to your hobby. Register or buy tickets online.</p>
+          <div class="btn-card">
+            <button><a> Attend</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- add section -->
+  <div id="add-section">
+    <div class="container add-container" data-aos="fade-up">
+      <div class="add-heading">
+        <img src="assets/icon7.jpeg" alt="">
+        <h1>Add your own</h1>
+      </div>
+
+      <p>Are you a teacher or expert? Do you sell or rent out equipment, venue or event tickets? Or, you know someone
+        who should be on hobbycue? Go ahead and Add your Own page</p>
+
+      <div class="add-button">
+        <div class="btn-card">
+          <button><a> Add new</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial Section -->
+  <div id="testimonial-section">
+    <div class="container add-container" style="background-color: var(--color-lightPurple); border: none;" data-aos="fade-up">
+      <div class="add-heading">
+        <img src="assets/icon8.jpeg" alt="">
+        <h1>Testimonials</h1>
+      </div>
+
+      <p>In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect
+        with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with,
+        communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding
+        products and services that I can avail, which I can be assured is going to be of great quality as it comes
+        recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to
+        safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly
+        recommend it.</p>
+      <div class="record-container">
+        <div class="record-image">
+          <img src="assets/record.jpeg" alt="">
+        </div>
+        <div class="info-detail">
+          <img src="assets/img_4.jpeg" alt="">
+          <div class="info">
+            <h2>Shubha Nagarajan</h2>
+            <p>Classical Dancer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Community section -->
+  <div id="community-section">
+    <div class="container community-container" data-aos="fade-up">
+      <h1>Your <span style="color: var(--color-purple);">Hobby</span>, Your <span
+          style="color: var(--color-blue);">Community...</span></h1>
+      <div class="btn-community">
+        <button><a>Get Started</a></button>
+      </div>
+      <div class="community-image">
+        <img src="assets/img_2.png" alt="">
+        <img src="assets/img_3.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+
+  <section class="footer" >
+    <div class="box-container container">
+      <div class="box">
+        <h3>Hobbycue</h3>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Work with Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="box">
+        <h3>How Do I</h3>
+        <a href="#">Sign Up</a>
+        <a href="#">Add a Listing</a>
+        <a href="#">Claim Listing</a>
+        <a href="#">Post a Query</a>
+        <a href="#">Add a Blog Post</a>
+        <a href="#">Other Queries</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#">Listings</a>
+        <a href="#">Blog Posts</a>
+        <a href="#">Shop / Store</a>
+        <a href="#">Community</a>
+      </div>
+
+      <div class="box soical-media">
+        <div class="social-links">
+          <h3>Social Media</h3>
+          <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+        <div class="invite">
+          <h3>Invite Friends</h3>
+
+          <div class="search_container">
+            <div class="bar">
+              <input type="text" placeholder='Email ID' style="background-color: white; border: 2px solid var(--color-purple);"/>
+            </div>
+            <div class="invite-icon">
+              <h2>Invite</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="credit-container">
+    <p class="credit">© Purple Cues Private Limited</p>
+  </div>
+
+
+  <script src="Javascipt_folder/script.js"></script>
+  <!-- our aos data -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000
+    });
+  </script>
+ 
+</body>
+
+</html>
