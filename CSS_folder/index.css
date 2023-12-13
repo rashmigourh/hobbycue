@@ -172,7 +172,7 @@ ul#dropdown {
   margin: 1rem;                                     
 }
 .search_container .bar input {
-  width: 40vh;
+  width: 100%;
   height: 3rem;
   padding: 2rem;
   border-radius: 1rem 0 0 1rem;

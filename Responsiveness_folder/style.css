@@ -199,10 +199,6 @@
   #message{
     left: 80%;
   }
-  .search_container .bar input {
-    width: 25vh;
-    height: 3rem;
-  }
 }
 
 @media screen and (max-width: 405px) {
